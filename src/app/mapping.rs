@@ -1,6 +1,6 @@
 use std::cmp;
 use rand::Rng;
-use rand::distributions::{Weighted, WeightedChoice};
+use rand::distributions::{Weighted, WeightedChoice, IndependentSample};
 use super::data::{
     Object,
     Tile,
@@ -13,6 +13,7 @@ use super::data::{
     Item,
     Game,
     Tcod,
+    MessageLog,
 };
 use super::util;
 use crate::{PLAYER, MAP_HEIGHT, MAP_WIDTH, ROOM_MAX_SIZE, ROOM_MIN_SIZE, MAX_ROOMS};

@@ -168,11 +168,7 @@
   <component name="MacroExpansionManager">
     <option name="directoryName" value="QMODhXNy" />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="y" value="21" />
-    <option name="width" value="1366" />
-    <option name="height" value="747" />
-  </component>
+  <component name="ProjectId" id="1OjjBfwzGvTHipd00kKkFX9AYqW" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -213,6 +209,7 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="org.rust.cargo.project.model.PROJECT_DISCOVERY" value="true" />
     <property name="org.rust.hideDetachedFileNotifications/home/eric/Projects/Code/Rust/roguelike/src/app/rendering.rs" value="true" />
+    <property name="org.rust.hideDetachedFileNotificationsC:/Users/eric/Projects/Rust/roguelike/src/app/mapping.rs" value="true" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
     <property name="settings.editor.splitter.proportion" value="0.24209486" />
