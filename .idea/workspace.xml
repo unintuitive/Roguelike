@@ -13,19 +13,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fe9acde5-739b-4675-869d-91647a0467ad" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/ai.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/controls.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/equipment.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/items.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/mapping.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/menu.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/meta.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/movement.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/player_actions.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/rendering.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/spellcasting.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/targeting.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/cf8aeb47-c924-46d7-be14-55a6a43e18ff.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/cf8aeb47-c924-46d7-be14-55a6a43e18ff.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/savegame" beforeDir="false" afterPath="$PROJECT_DIR$/savegame" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/controls.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/controls.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/data.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/data.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/mapping.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/mapping.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/meta.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/meta.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/util.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/util.rs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -96,28 +91,23 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/meta.rs">
+        <entry file="file://$PROJECT_DIR$/src/app/data.rs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="55" column="23" selection-start-line="55" selection-start-column="23" selection-end-line="55" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/player_actions.rs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="648">
-              <caret line="37" column="12" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
+            <state relative-caret-position="581">
+              <caret line="81" selection-start-line="81" selection-end-line="81" />
+              <folding>
+                <element signature="e#4562#4563#0" expanded="true" />
+                <element signature="e#4593#4594#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/app/rendering.rs">
+        <entry file="file://$PROJECT_DIR$/src/app/mapping.rs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="121" column="8" selection-start-line="121" selection-start-column="8" selection-end-line="121" selection-end-column="8" />
+            <state relative-caret-position="104">
+              <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -125,69 +115,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/util.rs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1188">
-              <caret line="73" column="2" selection-start-line="73" selection-start-column="2" selection-end-line="73" selection-end-column="2" />
-              <folding>
-                <marker date="1563812791928" expanded="true" signature="1876:2438" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/controls.rs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="160" column="17" selection-start-line="160" selection-start-column="17" selection-end-line="160" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/data.rs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="310" column="4" selection-start-line="310" selection-start-column="4" selection-end-line="310" selection-end-column="4" />
-              <folding>
-                <element signature="e#3149#3150#0" expanded="true" />
-                <element signature="e#3180#3181#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/items.rs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="637">
-              <caret line="71" selection-start-line="71" selection-end-line="71" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/targeting.rs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="27">
-              <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/mapping.rs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="621">
-              <caret line="321" selection-start-line="321" selection-end-line="321" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/spellcasting.rs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="567">
-              <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
+            <state relative-caret-position="78">
+              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -223,16 +152,16 @@
         <option value="$PROJECT_DIR$/src/main.rs" />
         <option value="$PROJECT_DIR$/src/app/mod.rs" />
         <option value="$PROJECT_DIR$/src/app/menu.rs" />
-        <option value="$PROJECT_DIR$/src/app/util.rs" />
         <option value="$PROJECT_DIR$/src/app/items.rs" />
-        <option value="$PROJECT_DIR$/src/app/equipment.rs" />
         <option value="$PROJECT_DIR$/src/app/spellcasting.rs" />
-        <option value="$PROJECT_DIR$/src/app/data.rs" />
-        <option value="$PROJECT_DIR$/src/app/mapping.rs" />
         <option value="$PROJECT_DIR$/src/app/controls.rs" />
-        <option value="$PROJECT_DIR$/src/app/meta.rs" />
         <option value="$PROJECT_DIR$/src/app/player_actions.rs" />
         <option value="$PROJECT_DIR$/src/app/rendering.rs" />
+        <option value="$PROJECT_DIR$/src/app/meta.rs" />
+        <option value="$PROJECT_DIR$/src/app/equipment.rs" />
+        <option value="$PROJECT_DIR$/src/app/util.rs" />
+        <option value="$PROJECT_DIR$/src/app/mapping.rs" />
+        <option value="$PROJECT_DIR$/src/app/data.rs" />
       </list>
     </option>
   </component>
@@ -240,16 +169,16 @@
     <option name="directoryName" value="QMODhXNy" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-11" />
-    <option name="y" value="46" />
-    <option name="width" value="1940" />
-    <option name="height" value="2124" />
+    <option name="y" value="21" />
+    <option name="width" value="1366" />
+    <option name="height" value="747" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -272,7 +201,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -284,6 +212,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="org.rust.cargo.project.model.PROJECT_DISCOVERY" value="true" />
+    <property name="org.rust.hideDetachedFileNotifications/home/eric/Projects/Code/Rust/roguelike/src/app/rendering.rs" value="true" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
     <property name="settings.editor.splitter.proportion" value="0.24209486" />
@@ -311,6 +240,7 @@
       <option name="command" value="install --force cargo-expand" />
       <option name="allFeatures" value="false" />
       <option name="nocapture" value="false" />
+      <option name="emulateTerminal" value="false" />
       <option name="backtrace" value="SHORT" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
       <envs />
@@ -321,6 +251,7 @@
       <option name="command" value="run --package roguelike --bin roguelike" />
       <option name="allFeatures" value="false" />
       <option name="nocapture" value="false" />
+      <option name="emulateTerminal" value="false" />
       <option name="backtrace" value="SHORT" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
       <envs />
@@ -361,11 +292,14 @@
       <workItem from="1562275215467" duration="29196000" />
       <workItem from="1563743076606" duration="8818000" />
       <workItem from="1563812705015" duration="9659000" />
+      <workItem from="1564423251178" duration="173000" />
+      <workItem from="1564445804677" duration="944000" />
+      <workItem from="1564448001826" duration="3287000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="190102000" />
+    <option name="totallyTimeSpent" value="194506000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -377,15 +311,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="31" width="1293" height="1416" extended-state="0" />
+    <frame x="0" y="21" width="1366" height="747" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.52677596" visible="true" weight="0.16328189" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.52677596" visible="true" weight="0.17905918" />
       <window_info id="Structure" order="1" sideWeight="0.47322404" side_tool="true" weight="0.09470752" />
       <window_info id="Favorites" order="2" side_tool="true" weight="0.32941177" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3299532" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49966952" weight="0.2925117" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49966952" weight="0.47424242" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -399,7 +333,8 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Cargo" order="3" weight="0.32941177" />
-      <window_info anchor="right" id="Database" order="4" weight="0.17567568" />
+      <window_info anchor="right" id="Database" order="4" weight="0.17507645" />
+      <window_info anchor="right" id="LuaJ" order="5" weight="0.3295107" />
     </layout>
     <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.52677596" visible="true" weight="0.13923228" />
@@ -427,6 +362,17 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/app/player_actions.rs</url>
+          <line>36</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$USER_HOME$/.cargo/registry/src/github.com-1ecc6299db9ec823/tcod-sys-5.0.1/build.rs">
       <provider selected="true" editor-type-id="text-editor">
@@ -446,24 +392,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/cf8aeb47-c924-46d7-be14-55a6a43e18ff/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="27" selection-start-column="27" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/cf8aeb47-c924-46d7-be14-55a6a43e18ff/console.sql" />
     <entry file="file://$PROJECT_DIR$/src/app/ai.rs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
           <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.rs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1053">
-          <caret line="39" column="44" selection-start-line="39" selection-start-column="44" selection-end-line="39" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -488,87 +421,87 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/equipment.rs">
+    <entry file="file://$PROJECT_DIR$/src/app/rendering.rs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="28">
+          <caret line="114" selection-start-line="114" selection-end-line="114" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/items.rs">
+    <entry file="file://$PROJECT_DIR$/src/app/meta.rs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="637">
-          <caret line="71" selection-start-line="71" selection-end-line="71" />
+        <state>
+          <caret line="75" column="20" selection-start-line="75" selection-start-column="20" selection-end-line="75" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/targeting.rs">
+    <entry file="file://$PROJECT_DIR$/src/app/controls.rs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.rs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
+        <state relative-caret-position="581">
+          <caret line="72" selection-start-line="72" selection-end-line="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/player_actions.rs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/spellcasting.rs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
+        <state relative-caret-position="581">
+          <caret line="93" selection-start-line="93" selection-end-line="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/items.rs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="581">
+          <caret line="86" selection-start-line="86" selection-end-line="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/targeting.rs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/equipment.rs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="581">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/util.rs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1188">
-          <caret line="73" column="2" selection-start-line="73" selection-start-column="2" selection-end-line="73" selection-end-column="2" />
-          <folding>
-            <marker date="1563812791928" expanded="true" signature="1876:2438" ph="..." />
-          </folding>
+        <state relative-caret-position="78">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/data.rs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="310" column="4" selection-start-line="310" selection-start-column="4" selection-end-line="310" selection-end-column="4" />
+        <state relative-caret-position="581">
+          <caret line="81" selection-start-line="81" selection-end-line="81" />
           <folding>
-            <element signature="e#3149#3150#0" expanded="true" />
-            <element signature="e#3180#3181#0" expanded="true" />
+            <element signature="e#4562#4563#0" expanded="true" />
+            <element signature="e#4593#4594#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/mapping.rs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="321" selection-start-line="321" selection-end-line="321" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/controls.rs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="160" column="17" selection-start-line="160" selection-start-column="17" selection-end-line="160" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/meta.rs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="55" column="23" selection-start-line="55" selection-start-column="23" selection-end-line="55" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/player_actions.rs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="37" column="12" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/rendering.rs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="121" column="8" selection-start-line="121" selection-start-column="8" selection-end-line="121" selection-end-column="8" />
+        <state relative-caret-position="104">
+          <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
         </state>
       </provider>
     </entry>

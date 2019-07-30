@@ -110,7 +110,7 @@ pub fn play_game(objects: &mut Vec<Object>, game: &mut Game, tcod: &mut Tcod) {
             break;
         }
 
-        if objects[PLAYER].alive && player_action != PlayerAction::DidntTakeTurn {
+        if objects[PLAYER].alive && player_action != PlayerAction::NoTurnTaken {
 //            util::growl(objects, game); // Useful for in-game debug
             for id in 0..objects.len() {
                 if objects[id].ai.is_some() {

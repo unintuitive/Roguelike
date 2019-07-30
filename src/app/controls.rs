@@ -70,12 +70,12 @@ pub fn handle_keys(
                             tcod::colors::DARK_ORANGE,
                         );
                         mapping::next_level(objects, game, tcod);
-                        DidntTakeTurn
+                        NoTurnTaken
                     } else {
                         TookTurn
                     }
                 }
-                _ => DidntTakeTurn
+                _ => NoTurnTaken
             }
         }
         (Key { code: Up, .. }, true) => {
@@ -102,7 +102,7 @@ pub fn handle_keys(
             if let Some(item_id) = item_id {
                 items::pick_item_up(item_id, objects, game);
             }
-            DidntTakeTurn
+            NoTurnTaken
         }
         // Drop item
         (Key { printable: 'o', .. }, true) => {
@@ -114,7 +114,7 @@ pub fn handle_keys(
             if let Some(inventory_index) = inventory_index {
                 items::drop_item(inventory_index, objects, game);
             }
-            DidntTakeTurn
+            NoTurnTaken
         }
         // Show inventory
         (Key { printable: 'i', ..}, true) => {
@@ -126,7 +126,7 @@ pub fn handle_keys(
             if let Some(inventory_index) = inventory_index {
                 items::use_item(inventory_index, objects, game, tcod );
             }
-            DidntTakeTurn
+            NoTurnTaken
         }
         // TODO: < doesn't work. It's a bug, it seems.
         (Key { printable: '<', .. }, true) => {
@@ -140,7 +140,7 @@ pub fn handle_keys(
                 );
                 mapping::next_level(objects, game, tcod);
             }
-            DidntTakeTurn
+            NoTurnTaken
         }
         (Key { printable: 'u', .. }, true) => {
             let player = &objects[PLAYER];
@@ -161,7 +161,7 @@ Defense: {}",
                 );
                 menu::msgbox(&msg, CHARACTER_SCREEN_WIDTH, &mut tcod.root)
             }
-            DidntTakeTurn
+            NoTurnTaken
         }
         // Toggle fullscreen
         (
@@ -174,10 +174,10 @@ Defense: {}",
         ) => {
             let fullscreen = tcod.root.is_fullscreen();
             tcod.root.set_fullscreen(!fullscreen);
-            DidntTakeTurn
+            NoTurnTaken
         }
         (Key { code: Escape, .. }, _) => Exit, // Exit the game
-        _ => DidntTakeTurn,
+        _ => NoTurnTaken,
     }
 }
 

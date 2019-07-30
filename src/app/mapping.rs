@@ -1,6 +1,6 @@
 use std::cmp;
 use rand::Rng;
-use rand::distributions::{Weighted, WeightedChoice, IndependentSample};
+use rand::distributions::{Weighted, WeightedChoice};
 use super::data::{
     Object,
     Tile,
@@ -13,7 +13,6 @@ use super::data::{
     Item,
     Game,
     Tcod,
-    MessageLog
 };
 use super::util;
 use crate::{PLAYER, MAP_HEIGHT, MAP_WIDTH, ROOM_MAX_SIZE, ROOM_MIN_SIZE, MAX_ROOMS};
@@ -56,58 +55,21 @@ pub fn is_blocked(x: i32, y: i32, map: &Map, objects: &[Object]) -> bool {
 
 // TODO: Refactor out map to game
 pub fn place_objects(room: Rect, map: &Map, objects: &mut Vec<Object>, level: u32) {
-    let max_monsters = util::from_dungeon_level(
-        &[
-            Transition { level: 1, value: 2 },
-            Transition { level: 4, value: 3 },
-            Transition { level: 6, value: 5 },
-        ],
+
+    let max_monsters = util::vec_from_dungeon_level(
+        Transition::max_monsters(),
         level,
     );
 
     let num_monsters = rand::thread_rng().gen_range(0, max_monsters + 1);
 
-    let troll_chance = util::from_dungeon_level(
-        &[
-            Transition {
-                level: 2,
-                value: 5,
-            },
-            Transition {
-                level: 3,
-                value: 15,
-            },
-            Transition {
-                level: 5,
-                value: 30,
-            },
-            Transition {
-                level: 7,
-                value: 60,
-            },
-        ],
+    let troll_chance = util::vec_from_dungeon_level(
+        Transition::troll_chance(),
         level,
     );
 
-    let draco_chance = util::from_dungeon_level(
-        &[
-            Transition {
-                level: 1,
-                value: 5,
-            },
-            Transition {
-                level: 3,
-                value: 20,
-            },
-            Transition {
-                level: 5,
-                value: 60,
-            },
-            Transition {
-                level: 7,
-                value: 80,
-            },
-        ],
+    let draco_chance = util::vec_from_dungeon_level(
+        Transition::draco_chance(),
         level,
     );
 
@@ -180,11 +142,8 @@ pub fn place_objects(room: Rect, map: &Map, objects: &mut Vec<Object>, level: u3
         }
     }
 
-    let max_items = util::from_dungeon_level(
-        &[
-            Transition { level: 1, value: 1 },
-            Transition { level: 4, value: 2 },
-        ],
+    let max_items = util::vec_from_dungeon_level(
+        Transition::max_items(),
         level,
     );
 
@@ -196,49 +155,34 @@ pub fn place_objects(room: Rect, map: &Map, objects: &mut Vec<Object>, level: u3
         },
         Weighted {
             weight: util::from_dungeon_level(
-                &[Transition {
-                    level: 4,
-                    value: 25,
-                }],
+                &[Transition::new(4, 25)],
                 level
             ),
             item: Item::Lightning,
         },
         Weighted {
             weight: util::from_dungeon_level(
-                &[Transition {
-                    level: 4,
-                    value: 25,
-                }],
+                &[Transition::new(4, 25)],
                 level
             ),
             item: Item::Fireball,
         },
         Weighted {
             weight: util::from_dungeon_level(
-                &[Transition {
-                    level: 2,
-                    value: 10,
-                }],
+                &[Transition::new(2,10)],
                 level,
             ),
             item: Item::Confuse,
         },
         Weighted {
             weight: util::from_dungeon_level(
-                &[Transition {
-                    level: 4,
-                    value: 5
-                }],
+                &[Transition::new(4,5)],
                 level
             ),
             item: Item::Sword },
         Weighted {
             weight: util::from_dungeon_level(
-                &[Transition {
-                    level: 8,
-                    value: 15,
-                }],
+                &[Transition::new(8, 15)],
                 level
             ),
             item: Item::Shield,

@@ -21,6 +21,14 @@ pub fn from_dungeon_level(table: &[Transition], level: u32) -> u32 {
         .map_or(0, |transition| transition.value)
 }
 
+pub fn vec_from_dungeon_level(table: Vec<Transition>, level: u32) -> u32 {
+    table
+        .iter()
+        .rev()
+        .find(|transition| level >= transition.level)
+        .map_or(0, |transition| transition.value)
+}
+
 // DEATH
 pub fn player_death(player: &mut Object, game: &mut Game) {
     game.log.add("You died!", tcod::colors::DARK_RED);

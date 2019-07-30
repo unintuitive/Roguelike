@@ -41,7 +41,7 @@ pub enum Item {
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum PlayerAction {
     TookTurn,
-    DidntTakeTurn,
+    NoTurnTaken,
     Exit,
 }
 
@@ -80,10 +80,75 @@ pub struct Game {
     pub dungeon_level: u32,
 }
 
-
 pub struct Transition {
     pub level: u32,
     pub value: u32,
+}
+
+impl Transition {
+    pub fn new(level: u32, value: u32) -> Self {
+        Transition {
+            level,
+            value,
+        }
+    }
+
+    pub fn max_monsters() -> Vec<Self> {
+        vec![
+            Transition { level: 1, value: 2 },
+            Transition { level: 4, value: 3 },
+            Transition { level: 6, value: 5 },
+        ]
+    }
+
+    pub fn max_items() -> Vec<Self> {
+        vec![
+            Transition { level: 1, value: 1 },
+            Transition { level: 4, value: 2 },
+        ]
+    }
+
+    pub fn draco_chance() -> Vec<Self> {
+        vec![
+            Transition {
+                level: 1,
+                value: 5,
+            },
+            Transition {
+                level: 3,
+                value: 20,
+            },
+            Transition {
+                level: 5,
+                value: 60,
+            },
+            Transition {
+                level: 7,
+                value: 80,
+            },
+        ]
+    }
+
+    pub fn troll_chance() -> Vec<Self> {
+        vec![
+            Transition {
+                level: 2,
+                value: 5,
+            },
+            Transition {
+                level: 3,
+                value: 15,
+            },
+            Transition {
+                level: 5,
+                value: 30,
+            },
+            Transition {
+                level: 7,
+                value: 60,
+            },
+        ]
+    }
 }
 
 pub struct Tcod {
@@ -368,4 +433,3 @@ impl Tile {
         }
     }
 }
-
