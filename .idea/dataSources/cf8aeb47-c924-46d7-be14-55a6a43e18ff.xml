@@ -9,11 +9,11 @@
       <Owner>eric</Owner>
       <IntrospectionStateNumber>32705</IntrospectionStateNumber>
       <Current>1</Current>
-      <Relations>sequence|table|17335|17337|1
+      <Relations>sequence|table|17411|17413|1
+sequence|table|17423|17425|1
+sequence|table|17335|17337|1
 sequence|table|17349|17351|1
 sequence|table|17363|17365|1
-sequence|table|17411|17413|1
-sequence|table|17423|17425|1
 sequence|table|25678|25680|1
 </Relations>
       <Visible>1</Visible>

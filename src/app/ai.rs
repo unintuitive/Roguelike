@@ -35,12 +35,20 @@ pub fn ai_basic(
         if objects[monster_id].distance_to(&objects[PLAYER]) >= 2.0 {
             let (player_x, player_y) = objects[PLAYER].pos();
             movement::move_toward(monster_id, player_x, player_y, objects, game);
+        } else if objects[monster_id].fighter.map_or(false, |f| f.hp <= 5) {
+            // The monster is injured. Evade!
+            game.log.add(
+                format!("The injured {} tries to flee!", objects[monster_id].name),
+                tcod::colors::RED,
+            );
+            movement::move_by(
+                monster_id,
+                rand::thread_rng().gen_range(-1, 2),
+                rand::thread_rng().gen_range(-1, 2),
+                objects,
+                game,
+            );
         } else if objects[PLAYER].fighter.map_or(false, |f| f.hp > 0) {
-//            message(
-//                messages,
-//                format!("The {} attacks the player!", monster.name),
-//                colors::WHITE
-//            );
             let (monster, player) = util::mut_two(monster_id, PLAYER, objects);
             monster.attack(player, game);
         }
